@@ -1,0 +1,2 @@
+[console_scripts]
+paris = python_template.cli:python_template

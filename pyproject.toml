@@ -1,0 +1,24 @@
+[project]
+name = "paris_goal"
+version = "1"
+description = "Final project for Climate Science class."
+license = {file = "LICENSE"}
+authors = [
+    {name = "Josh Moore", email = "joshua.moore@edu.uni-graz.at"}
+]
+readme = "README.md"
+requires-python = ">= 3.10"
+dependencies = [
+    "numpy >= 1.24.2",
+    "pyyaml >= 6.0"
+]
+
+[project.scripts]
+paris = "python_template.cli:python_template"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
